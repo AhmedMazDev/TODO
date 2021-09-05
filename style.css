@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+
+:root {
+  --bgColor: #e2e2e2;
+  --inputColor: #f1f0e0;
+  --deleteColor: #e84855;
+  --checkColor: #1b998b;
+}
+
+body {
+  background: url(/img/BG.svg);
+  background-position: 100% center;
+  background-color: var(--bgColor);
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: Spartan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  height: 70%;
+  width: 70%;
+  padding: 5rem 5rem;
+  margin: 0 auto;
+}
+
+main h1 {
+  font-size: 8rem;
+  font-weight: 300;
+}
+
+form {
+  width: 90%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07))
+    drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198))
+    drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275))
+    drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035))
+    drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725))
+    drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802));
+  margin: 2rem 0rem;
+}
+
+form input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 60px 0px 0px 60px;
+  background: var(--inputColor);
+  color: #868383;
+  padding-left: 2rem;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+form button {
+  height: 100%;
+  padding: 0 2rem;
+  font-size: 5rem;
+  border: none;
+  outline: none;
+  border-radius: 0px 60px 60px 0px;
+  background: #fffd82;
+}
+
+.todos {
+  width: 90%;
+  height: 80%;
+  overflow-y: auto;
+  margin-bottom: 3rem;
+
+  overflow-x: hidden;
+}
+
+.todos::-webkit-scrollbar {
+  width: 10px;
+}
+
+.todos::-webkit-scrollbar-track {
+  background: transparent;
+  box-shadow: inset 0 0 6px rgba(27, 27, 27, 0.452);
+}
+
+.todos::-webkit-scrollbar-thumb {
+  background-color: var(--bgColor);
+  background-color: rgba(255, 254, 254, 0.5);
+  border-radius: 20px;
+}
+
+.todo {
+  display: flex;
+  width: 99%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0rem;
+}
+
+.todo .left-btn {
+  height: 100%;
+  font-size: 5rem;
+  border: none;
+  outline: none;
+  border-radius: 60px 0px 0px 60px;
+  background: var(--checkColor);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo .left-btn i {
+  padding: 1rem 1.5rem 1rem 2rem;
+}
+
+.todo .right-btn {
+  height: 100%;
+  font-size: 5rem;
+  border: none;
+  outline: none;
+  border-radius: 0px 60px 60px 0px;
+  background: var(--deleteColor);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo .right-btn i {
+  padding: 1rem 2rem 1rem 1.5rem;
+}
+
+.todo-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: var(--inputColor);
+  color: #868383;
+  padding-left: 2rem;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.clear {
+  border: none;
+  outline: none;
+  border-radius: 60px;
+  background: var(--deleteColor);
+  align-self: center;
+  padding: 1.5rem 5rem;
+  font-size: 3rem;
+  font-family: inherit;
+  font-weight: 300;
+  color: white;
+}
