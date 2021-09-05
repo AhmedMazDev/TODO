@@ -12,7 +12,7 @@
 }
 
 body {
-  background: url(/img/BG.svg);
+  background: url(./img/BG.svg);
   background-position: 100% center;
   background-color: var(--bgColor);
   background-repeat: no-repeat;
